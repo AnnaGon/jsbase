@@ -9,7 +9,7 @@ for (var i = 0; i < array.length; i++) {
     array[i] = new Array(3);
     
     for (var j = 0; j < array[i].length; j++) {
-        if (i % 2 !== 0 ){
+        if (i % 2 == 0 ){
             array[i][j] = ("even");
             // console.log(array[i][j]);
             
