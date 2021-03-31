@@ -114,22 +114,22 @@ var watchList = [
     }
 ];
 
-// var ranking = watchList.map(function (item){
-//     return { "Title": item["Title"], "Rating": item["imdbRating"]};
-// });
-// console.log(ranking);
-// console.log("*******************")
+var ranking = watchList.map(function (item){
+    return { "Title": item["Title"], "Rating": item["imdbRating"]};
+});
+console.log(ranking);
+console.log("*******************")
 
 // //         7. Массив watchList содержит объекты с информацией о нескольких фильмах. Используйте filter и map для возврата нового массива объектов только с title и rating, но где imdbRating больше или равен 8.0.
 
-// var filteredList = watchList.filter(item => item["imdbRating"] >= 8.0).map((item) =>({
-//     Title: item["Title"],
-//     Rating: item["imdbRating"]
-// }));
+var filteredList = watchList.filter(item => item["imdbRating"] >= 8.0).map((item) =>({
+    Title: item["Title"],
+    Rating: item["imdbRating"]
+}));
 
 
-// console.log(filteredList); 
-// console.log("**************");
+console.log(filteredList); 
+console.log("**************");
 
 
 //         8. Массив watchList содержит объекты с информацией о нескольких фильмах. Используйте reduce, чтобы найти средний рейтинг IMDB фильмов, снятых режиссером Кристофером Ноланом. Вспомните из предыдущих заданий filter и map. Вам может потребоваться создать другие переменные, но сохраните окончательное среднее значение в переменную AverageRating. Обратите внимание, что значения рейтинга сохраняются в виде строк в объекте и должны быть преобразованы в числа, прежде чем они будут использованы в любых математических операциях.
