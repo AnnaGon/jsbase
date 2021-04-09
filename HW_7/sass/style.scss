@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(158, 158, 158);
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+li{
+    // text-align: center;
+}
+
+.container{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.my-slider{
+    margin: 50px 0;
+    padding: 0 100px;
+    position: relative;
+    
+    &__item{
+        text-align: center;
+    }
+    &__img{
+        width: 600px;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
